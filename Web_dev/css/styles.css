@@ -1,0 +1,199 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF3E0;
+    /* Soft Beige */
+    color: #4B3F2F;
+    /* Dark Brown */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #FF914D;
+    /* Warm Orange */
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#intro {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#intro img.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 8px;
+}
+
+/* Page Summary Styling */
+#overview {
+    margin-top: 2em;
+}
+
+.page-summary {
+    background-color: #FFF5E5;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+.page-summary h3 {
+    color: #FF914D;
+    /* Warm Orange for headers within summaries */
+}
+
+.page-summary p {
+    margin-top: 0.5em;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #FF914D;
+    color: white;
+    margin-top: 2em;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form input,
+form button {
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #FF914D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #E88340;
+    /* Slightly darker shade for hover effect */
+}
+
+/* List Styling */
+ul#petList {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+ul#petList li {
+    padding: 0.5em;
+    background-color: #FFF5E5;
+    border: 1px solid #FF914D;
+    /* Orange border */
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#petList li button {
+    background-color: #FF914D;
+    /* Warm Orange for buttons */
+    color: white;
+    border: none;
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul#petList li button:hover {
+    background-color: #E88340;
+    /* Darker shade on hover */
+}
+
+/* Chart Container Styling */
+canvas {
+    margin: 0 auto;
+    display: block;
+    max-width: 90%;
+}
+
+.chewy {
+    max-width: 30%;
+    /* Set max width to 80% of the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin: 1em auto;
+    /* Center the image */
+    display: block;
+    /* Center-align for block-level element */
+    border-radius: 8px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.pets-image {
+    max-width: 100%;
+    /* Makes image responsive */
+    width: 20%;
+    /* Set width as needed */
+    height: auto;
+    border-radius: 8px;
+}

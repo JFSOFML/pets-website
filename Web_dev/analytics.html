@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Data Analytics - Pet Insights</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Include Chart.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pet Insights</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="managepets.html">Manage Pets</a>
+            <a href="analytics.html">Data Analytics</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Pet Data Analytics</h2>
+        <p>Explore trends in pet ownership and learn about the popularity of different pet types.</p>
+
+        <!-- Bar Chart for Number of Pets Owned by Type -->
+        <section>
+            <h3>Number of Pets Owned by Type</h3>
+            <canvas id="petTypeChart" width="400" height="200"></canvas>
+        </section>
+
+        <!-- Pie Chart for Percentage Distribution of Pet Types -->
+        <section>
+            <h3>Pet Type Popularity</h3>
+            <canvas id="petPopularityChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+
+    <!-- Link to external analytics.js file -->
+    <script src="js/analytics.js"></script>
+</body>
+
+</html>

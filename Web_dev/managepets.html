@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Pets - Pet Insights</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pet Insights</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="managepets.html">Manage Pets</a>
+            <a href="analytics.html">Data Analytics</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Manage Pets</h2>
+        <div class="image-container">
+            <img src="img/pets.png" alt="pets" class="pets-image">
+        </div>
+        <section id="form-section">
+            <form id="pet-form">
+                <input type="text" id="petName" placeholder="Pet Name" required>
+                <input type="text" id="petType" placeholder="Pet Type" required>
+                <input type="number" id="petAge" placeholder="Age" required>
+                <button type="button" onclick="createPet()">Add Pet</button>
+                <button type="button" onclick="updatePet()" id="updateBtn" style="display: none;">Update Pet</button>
+            </form>
+        </section>
+        <section id="pet-list-section">
+            <h3>Pet List</h3>
+            <ul id="petList"></ul>
+        </section>
+    </main>
+</body>
+
+</html>
